@@ -19,7 +19,7 @@ add_action( 'wp_enqueue_scripts', 'enqueue_parent_styles' );
 
 //include the child theme modifications to the customizer
 require_once plugin_dir_path( __FILE__ ) . 'theme-customizer.php';
-require_once plugin_dir_path( __FILE__ ) . 'site-functions.php';
+//require_once plugin_dir_path( __FILE__ ) . 'site-functions.php';
 
 //make header above
 add_action('mm_header_above', 'mm_header_above_html');
