@@ -1,0 +1,61 @@
+/* styling the single product page */
+
+.single-product .content-area {
+  padding-top: 0 !important;
+}
+
+.single-product .product-type-charter_booking .wc-tabs-wrapper {
+  margin-top: 30px;
+}
+
+@media (min-width: 767px) {
+
+  .single-product .product-type-charter_booking .product-summary-flex {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+  }
+
+  .single-product .product-type-charter_booking .product-summary-flex div{
+    flex-basis: 45%;
+  }
+
+  .single-product .product-type-charter_booking .product-summary-flex div.cb-entry-summary {
+    flex-basis: 100%;
+  }
+
+  .single-product div.cb-entry-summary {
+   display: flex;
+  }
+
+  .single-product .product-type-charter_booking div.cb-entry-summary .hold-product-listing {
+    flex-basis: 69%
+  }
+
+  .single-product .product-type-charter_booking div.cb-entry-summary .hold-product-calendar {
+    flex-basis: 30%
+    }
+
+  /*related and upsells*/
+  .up-sells ul.products, .related ul.products {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+  }
+  .up-sells ul.products li, .related ul.products li {
+    flex-basis: 20%;
+  }
+
+  /*shop page */
+  .post-type-archive-product ul.products {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+  }
+
+  .post-type-archive-product ul.products li {
+    flex-basis: 20%;
+    margin-bottom: 20px;
+  }
+
+}

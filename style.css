@@ -1,0 +1,166 @@
+/*
+Theme Name: BoatWorks
+Theme URL: http://msp-media.org
+Description: twentyseventeen child for Charter Bookings
+Author: Meg Phillips
+Author URL: ttp://msp-media.org
+Template: twentyseventeen
+Version: 1.0.0
+Text Domain: twentyseventeen-child-BoatWorks
+*/
+
+
+.mm-header-above {
+  text-align: right;
+}
+
+.mm-header-above ul{
+  margin: 0;
+
+}
+.mm-header-above li {
+  list-style: none;
+  display: inline;
+  padding: 10px;
+  max-width: 30px
+}
+
+.msp-site-branding {
+  border-bottom: 1px solid #eee;
+}
+
+.site-title {
+  text-transform: none;
+}
+
+.page-template-fullwidth-template .single-featured-image-header, .single-product .single-featured-image-header{
+  background-color: #fff;
+  border: none;
+}
+
+.page-template-fullwidth-template .site-content {
+  padding-top: 0;
+}
+
+body:not(.page-template-fullwidth-template) .content-area {
+  padding-top: 50px;
+}
+
+.page-template-fullwidth-template .entry-header-full-width {
+  padding-top: 50px;
+}
+
+#masthead {
+    z-index:170;
+    margin:0 auto;
+    width:100%;
+    position:fixed;
+    top:0;
+    left:0;
+    right:0;
+}
+
+.admin-bar-spacer {
+  min-height: 32px;
+}
+
+/*headers and body size and color*/
+
+body {
+  font-family: "Open Sans", sans-serif;
+  color: #555;
+  font-size: 16px;
+  font-weight: normal;
+}
+
+body p, body li {
+  line-height: 33px;
+}
+
+body li {
+  margin-left: 25px;
+}
+
+body p a {
+  font-weight: bold;
+  padding-bottom: 1px;
+  border-bottom: 1px solid #eee;
+}
+
+body p a:hover{
+  color: #000;
+}
+
+
+
+.site-title {
+      font-family: "Libre Franklin", "Helvetica Neue", helvetica, arial, sans-serif;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  margin: 0;
+  padding: 0;
+}
+
+h2, h3, h4 {
+  margin: 25px 0 0 0;
+}
+
+h2.entry-sub-title {
+  margin-top: 0;
+}
+
+h3 {
+  font-family: "Libre Franklin", "Helvetica Neue", helvetica, arial, sans-serif;
+  font-size: 25px;
+  font-weight: bold;
+}
+
+h4{
+  font-family: "Libre Franklin", "Helvetica Neue", helvetica, arial, sans-serif;
+  font-weight: bold;
+}
+
+
+
+body.page:not(.twentyseventeen-front-page) .entry-title {
+  color: #404041;
+  font-size: 40px;
+  font-family: "Libre Franklin", "Helvetica Neue", helvetica, arial, sans-serif;
+  text-transform: none;
+  letter-spacing: normal;
+}
+
+
+h2{
+  color: #808284;
+  font-size: 30px;
+  font-weight: bold;
+  font-family: 'Open Sans';
+}
+
+
+@media (min-width: 768px){
+
+.main-navigation a {
+  padding: 0 1em
+}
+
+.site-branding {
+  position: relative;
+  padding: 0;
+  margin: 0 !important;
+  float: left;
+}
+
+body:not(.title-tagline-hidden) .site-branding-text {
+  display: block;
+}
+
+#site-navigation {
+  float: right;
+  margin: -35px 0;
+}
+
+
+} <!--end media query desktop-->
