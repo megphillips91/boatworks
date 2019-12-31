@@ -1,0 +1,26 @@
+/*
+Theme Name: BoatWorks
+Theme URL: http://msp-media.org
+Description: twentyseventeen child for Charter Bookings
+Author: Meg Phillips
+Author URL: ttp://msp-media.org
+Template: twentyseventeen
+Version: 1.0.0
+Text Domain: twentyseventeen-child-BoatWorks
+*/
+
+
+.mm-header-above {
+  text-align: right;
+}
+
+.mm-header-above ul{
+  margin: 0;
+
+}
+.mm-header-above li {
+  list-style: none;
+  display: inline;
+  padding: 10px;
+  max-width: 30px
+}
