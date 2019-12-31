@@ -30,6 +30,7 @@ function msp_add_controls($wp_customize){
       array(
         'section'  => 'colors',
         'priority' => 6,
+        'label'=>'Accent Color'
       )
     )
   );
@@ -45,7 +46,7 @@ function msp_add_controls($wp_customize){
  *
  */
 function msp_remove_controls($wp_customize){
-  $wp_customize->remove_control('header_textcolor');
+  //$wp_customize->remove_control('header_textcolor');
 }
 
  ?>

@@ -36,6 +36,7 @@
     flex-basis: 30%
     }
 
+
   /*related and upsells*/
   .up-sells ul.products, .related ul.products {
     display: flex;
@@ -44,6 +45,7 @@
   }
   .up-sells ul.products li, .related ul.products li {
     flex-basis: 20%;
+    margin: auto 10px;
   }
 
   /*shop page */
@@ -58,4 +60,17 @@
     margin-bottom: 20px;
   }
 
+}
+
+/*mobile*/
+@media (max-width: 767px){
+  .cb-entry-summary {
+    display: block !important;
+  }
+  .single-product .cb-entry-summary .hold-product-listing {
+    padding-top: 20px;
+  }
+  .single-product .cb-entry-summary .cb-calendar-container {
+    width: 100% !important;
+  }
 }
