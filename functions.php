@@ -11,6 +11,9 @@ function enqueue_parent_styles() {
     wp_enqueue_style('font-awesome', 'https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.css');
     wp_enqueue_style( 'woocommerce-css', get_stylesheet_directory_uri().'/woocommerce.css' );
     wp_enqueue_style( 'boatworks-product-styles', get_stylesheet_directory_uri().'/product.css' );
+    //get_stylesheet_directory_uri() . '/style.css'
+    wp_enqueue_script( 'boatworks-js', get_stylesheet_directory_uri() . '/theme.js', array( 'jquery' ),'',true );
+
 }
 add_action( 'wp_enqueue_scripts', 'enqueue_parent_styles' );
 
@@ -35,6 +38,21 @@ function mm_header_above_html(){
 add_filter( 'woocommerce_enqueue_styles', 'jk_dequeue_styles' );
 function jk_dequeue_styles( $enqueue_styles ) {
 	unset( $enqueue_styles['woocommerce-general'] );
+}
+
+add_filter('twentyseventeen_starter_content', 'boatworks_starter_widgets');
+
+function boatworks_starter_widgets($starter_content){
+  $starter_content['widgets'] = array();
+  return $starter_content;
+}
+
+add_filter( 'body_class', 'boatworks_body_classes', 12, 2 );
+function boatworks_body_classes($class){
+  if(is_plugin_active('woocommerce/woocommerce.php') && is_product()){
+    $class = str_replace("has-sidebar","",$class);
+  }
+  return $class;
 }
 
 
